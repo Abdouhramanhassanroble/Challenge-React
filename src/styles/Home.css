@@ -1,0 +1,23 @@
+.home {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .challenge-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+  }
+  
+  .challenge-card h3 {
+    margin: 0;
+    color: #007bff;
+  }

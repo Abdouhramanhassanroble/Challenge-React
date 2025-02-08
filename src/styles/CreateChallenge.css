@@ -1,0 +1,122 @@
+/* Style futuriste et centrage pour CreateChallenge */
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #53354a);
+  background-size: 300% 300%;
+  animation: backgroundMove 6s infinite alternate ease-in-out;
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Conteneur du formulaire */
+.create-challenge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  max-width: 450px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.create-challenge:hover {
+  transform: scale(1.05);
+}
+
+/* Titre futuriste */
+.create-challenge h1 {
+  font-size: 2.5rem;
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 30px #007bff;
+  margin-bottom: 20px;
+  animation: glowTitle 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes glowTitle {
+  0% {
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+  }
+  100% {
+    text-shadow: 0 0 20px #00eaff, 0 0 30px #007bff, 0 0 40px #00eaff;
+  }
+}
+
+/* Champs futuristes */
+.create-challenge input,
+.create-challenge textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  box-shadow: inset 0 0 10px rgba(0, 234, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.create-challenge input:focus,
+.create-challenge textarea:focus {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+  border: 1px solid #00eaff;
+}
+
+/* Bouton futuriste */
+.create-challenge button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #00eaff, #007bff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+  animation: pulseGlow 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+  }
+  100% {
+    box-shadow: 0 0 20px #007bff, 0 0 30px #00eaff;
+  }
+}
+
+.create-challenge button:hover {
+  background: linear-gradient(90deg, #007bff, #00eaff);
+  box-shadow: 0 0 25px #00eaff, 0 0 35px #007bff;
+}
+
+.create-challenge button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 30px #00eaff;
+}

@@ -1,0 +1,76 @@
+/* Conteneur principal */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  background: #fff; /* Dégradé moderne */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Formulaire */
+.login form {
+  background: #2a5298; /* Fond blanc */
+  border-radius: 15px; /* Coins arrondis */
+  padding: 40px; /* Espacement intérieur */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  text-align: center; /* Centre le texte */
+  width: 90%; /* Largeur relative */
+  max-width: 400px; /* Largeur maximale */
+}
+
+/* Logo */
+.login form img {
+  height: 20vh /* Taille du logo */
+}
+
+/* Titre */
+.login form h3 {
+  font-size: 2rem; /* Taille du texte */
+  color: #fff; /* Couleur du titre */
+  margin-bottom: 30px; /* Espace sous le titre */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Champs de saisie */
+.login form input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Bordure légère */
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.login form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  background: #fff;
+}
+
+/* Bouton */
+.login form button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #007bff, #2a5298);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login form button:hover {
+  background: linear-gradient(90deg, #2a5298, #007bff);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.login form button:active {
+  transform: scale(0.98);
+}

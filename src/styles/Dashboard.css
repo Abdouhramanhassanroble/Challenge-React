@@ -1,0 +1,25 @@
+.dashboard {
+    padding: 20px;
+    background-color: #eef;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard h1 {
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .participant-list {
+    margin-top: 20px;
+  }
+  
+  .participant-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .participant-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  

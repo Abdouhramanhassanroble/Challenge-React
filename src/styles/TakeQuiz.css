@@ -1,0 +1,102 @@
+/* ======== Arrière-plan holographique ======== */
+.quiz-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* ======== Carte principale ======== */
+  .quiz-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
+  }
+  
+  /* ======== Titre du quiz ======== */
+  .quiz-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00eaff;
+    text-shadow: 0px 0px 10px #00eaff;
+    margin-bottom: 15px;
+  }
+  
+  /* ======== Question Card ======== */
+  .question-card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* ======== Texte de la question ======== */
+  .question-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* ======== Options ======== */
+  .option-label {
+    display: block;
+    font-size: 16px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .option-label:hover {
+    color: #00eaff;
+    text-shadow: 0px 0px 5px #00eaff;
+  }
+  
+  /* ======== Bouton Soumettre ======== */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #00eaff, #0072ff);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(90deg, #0072ff, #00eaff);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
+  }
+  
+  /* ======== Messages d'erreur et score ======== */
+  .error-message {
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .score-message {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ff88;
+    text-shadow: 0px 0px 10px #00ff88;
+  }
+  
+  .loading-text {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
