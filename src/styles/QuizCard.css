@@ -1,0 +1,44 @@
+.futuristic-card {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(32, 32, 32, 0.9));
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .futuristic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.8);
+  }
+  
+  .futuristic-title {
+    font-family: "Orbitron", sans-serif;
+    color: cyan;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+  }
+  
+  .futuristic-text {
+    color: rgba(200, 255, 255, 0.8);
+    font-size: 14px;
+  }
+  
+  .futuristic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(135deg, #00e5ff, #0077ff);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.8);
+  }
+  
+  .futuristic-button:hover {
+    background: linear-gradient(135deg, #0077ff, #00e5ff);
+    box-shadow: 0px 0px 20px rgba(0, 229, 255, 1);
+    transform: scale(1.1);
+  }
+  

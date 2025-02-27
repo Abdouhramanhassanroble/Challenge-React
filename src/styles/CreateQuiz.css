@@ -1,0 +1,137 @@
+/* Fond d'écran futuriste */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460, #53354a);
+    background-size: 300% 300%;
+    animation: backgroundMove 6s infinite alternate ease-in-out;
+    color: #ffffff;
+  }
+  
+  @keyframes backgroundMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Conteneur principal */
+  .quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .quiz-container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Titres */
+  .quiz-container h1, 
+  .quiz-container h2, 
+  .quiz-container h3 {
+    text-align: center;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+  }
+  
+  /* Champs de texte */
+  .quiz-container input,
+  .quiz-container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    box-shadow: inset 0 0 10px rgba(0, 234, 255, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .quiz-container input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .quiz-container input:focus,
+  .quiz-container select:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px #00eaff, 0 0 25px #00eaff;
+    border: 1px solid #00eaff;
+  }
+  
+  /* Boutons futuristes */
+  .quiz-container button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #00eaff, #007bff);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    animation: pulseGlow 1.5s infinite alternate ease-in-out;
+  }
+  
+  @keyframes pulseGlow {
+    0% {
+      box-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    }
+    100% {
+      box-shadow: 0 0 20px #007bff, 0 0 30px #00eaff;
+    }
+  }
+  
+  .quiz-container button:hover {
+    background: linear-gradient(90deg, #007bff, #00eaff);
+    box-shadow: 0 0 25px #00eaff, 0 0 35px #007bff;
+  }
+  
+  .quiz-container button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 30px #00eaff;
+  }
+  
+  /* Messages d'erreur et de succès */
+  .quiz-container .text-red-500 {
+    color: #ff4c4c;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .quiz-container .text-green-500 {
+    color: #00ff7f;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Liste des questions */
+  .quiz-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quiz-container li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 234, 255, 0.5);
+    text-align: center;
+  }
+  
